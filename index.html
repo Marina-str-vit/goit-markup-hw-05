@@ -74,58 +74,6 @@
         </div>
       </section>
       <!-- /section 1-->
-
-      <!-- modal form -->
-
-      <div class="modal-overlay">
-        <form class="modal-form">
-          <fieldset class="form-group">
-            <legend class="group-title">
-              Leave your contacts and we will call you back
-            </legend>
-            <label class="form-label">
-              Name
-              <input type="text" name="username" required />
-            </label>
-            <label>
-              Phone
-              <input type="tel" name="contact_tel" required />
-            </label>
-            <label class="form-label">
-              Email
-              <input type="email" name="email" required />
-            </label>
-            <label class="form-label">
-              Comment
-              <textarea
-                class="form-input"
-                name="description"
-                placeholder="Text input"
-                rows="5"
-              >
-              </textarea>
-            </label>
-          </fieldset>
-          <fieldset>
-            <div class="">
-              <input
-                type="checkbox"
-                name="privacy_policy"
-                value="privacy_policy"
-              />
-              <label class="form-label-text" for="privacy_policy"
-                >I accept the terms and conditions of the
-                <span class="modal-span">Privacy Policy</span></label
-              >
-            </div>
-          </fieldset>
-
-          <button class="submit-btn" type="submit">Send</button>
-        </form>
-      </div>
-
-      <!-- /modal form -->
-
       <!-- section 2 and h2 is empty -->
       <section class="feature">
         <div class="container">
@@ -361,7 +309,6 @@
         </div>
       </section>
       <!-- /section 3 -->
-
       <!-- section 4 -->
       <section class="portfolio">
         <div class="container">
@@ -529,7 +476,80 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="sub-text">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-label">
+              <input
+                class="footer-email"
+                name="email"
+                type="email"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="footer-btn-sub">
+              Subscribe<svg width="24" height="24" class="icon-frame">
+                <use href="./images/icons_2.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- modal form -->
+    <div class="modal-overlay">
+      <form class="modal-form">
+        <button class="modal-btn" type="button">
+          <svg width="8" height="8" class="icon-close">
+            <use href="./images/icons_2.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <fieldset class="form-group">
+          <legend class="group-title">
+            Leave your contacts and we will call you back
+          </legend>
+          <label class="form-label">
+            Name
+            <input type="text" name="username" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="contact_tel" required />
+          </label>
+          <label class="form-label">
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label class="form-label">
+            Comment
+            <textarea
+              class="form-input"
+              name="comment"
+              placeholder="Text input"
+              rows="5"
+            >
+            </textarea>
+          </label>
+        </fieldset>
+        <fieldset>
+          <div class="">
+            <input
+              type="checkbox"
+              name="privacy_policy"
+              value="privacy_policy"
+              id="privacy_policy"
+            />
+            <label class="form-label-text" for="privacy_policy"
+              >I accept the terms and conditions of the
+              <span class="modal-span">Privacy Policy</span></label
+            >
+          </div>
+        </fieldset>
+
+        <button class="modal-btn-send" type="submit">Send</button>
+      </form>
+    </div>
+    <!-- /modal form -->
   </body>
 </html>
