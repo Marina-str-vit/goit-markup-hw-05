@@ -656,10 +656,6 @@ img {
   fill: #ffffff;
 } 
 
-/* .icon-close:hover {
-  fill: #ffffff;
-} */
-
 .modal-text {
 font-weight: 500;
 font-size: 16px;
@@ -767,9 +763,10 @@ margin-bottom: 16px;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    border: 1px solid rgba(46, 47, 66, 0.4);
     }
 
-  input[type="checkbox"]:checked +.modal-privacy-label >.privacy-span {
+    .modal-privacy-input[type="checkbox"]:checked +.modal-privacy-label>.privacy-span {
     fill: #F4F4FD;
     border: none;
     background-color: #404bbf;
